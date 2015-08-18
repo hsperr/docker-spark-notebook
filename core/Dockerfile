@@ -77,7 +77,7 @@ RUN apt-prepare \
  && cd /opt/jupyter \
  && git clone https://github.com/jupyter/notebook.git \
  && cd notebook \
- && pip3 install -r requirements.txt -e . \
+ && pip3 install --pre -e . \
  && python3 -m ipykernel.kernelspec \
  && echo "Installing openBLAS ..." \
  && cd /opt \
